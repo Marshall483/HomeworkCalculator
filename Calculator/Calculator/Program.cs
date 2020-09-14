@@ -4,29 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculator
+namespace HomeworkOne
 {
     class Program
     {
+        static void PrintRes(int res) => Console.WriteLine($"Result: {res}");
         static void Main()
         {
-            Console.WriteLine("Eneter First");
-            int a = int.Parse(Console.ReadLine());
+            var a = Calculator.RequestValue();
+            var @operator = Calculator.RequestOperator();
+            var b = Calculator.RequestValue();
+            var result = Calculator.Calculate(a, b, @operator);
 
-            Console.WriteLine("Eneter operator");
-            string @operator = Console.ReadLine();
-
-            Console.WriteLine("Eneter Second");
-            int b = int.Parse(Console.ReadLine());
-
-            switch (@operator)
-            {
-                case "+": Console.WriteLine($"Result {a + b}"); break;
-                case "-": Console.WriteLine($"Result {a - b}"); break;
-                case "*": Console.WriteLine($"Result {a * b}"); break;
-                case "/": Console.WriteLine($"Result {a / b}"); break;
-                default: throw new NotSupportedException("Operation has not defined!");
-            }
+            PrintRes(result);
             Console.ReadKey();
         }
     }
