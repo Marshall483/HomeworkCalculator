@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "wn7pLRt1HYL7Fjd3c/dV2lhjwK+ZyM+YkeEzMGP1skKj1GMQIj4Zejfkk7nkXA5L0BlsmmOncXLid4sDThm/WQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jows1\\RiderProjects\\HomeworkCalc\\HomeworkCalc\\HomeworkCalc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jows1\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\jows1\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\jows1\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
