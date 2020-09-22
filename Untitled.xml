@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Root CoveredStatements="40" TotalStatements="96" CoveragePercent="42" ReportType="DetailedXml" DotCoverVersion="2020.2.2">
+<Root CoveredStatements="14" TotalStatements="26" CoveragePercent="54" ReportType="DetailedXml" DotCoverVersion="2020.2.2">
   <FileIndices>
-    <File Index="1" Name="C:\Users\jows1\.nuget\packages\microsoft.net.test.sdk\16.4.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
-    <File Index="2" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\TestClaculator\UnitTest1.cs" ChecksumAlgorithm="SHA256" Checksum="965806CEB023E67D14F996B06625FCFE5E8166EA6223304EB6AC50354DE76F05" />
-    <File Index="3" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\TestClaculator\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="609721B0977B4BB4296F30DB82935147EB4A1C0DD665D90D1CA0787FF0F86F1D" />
     <File Index="4" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\TestClaculator\obj\Debug\netcoreapp3.1\TestClaculator.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="079A0749B60639B6032BACB823797D78E3D91040A22211FE5658843732458FD5" />
+    <File Index="3" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\TestClaculator\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="609721B0977B4BB4296F30DB82935147EB4A1C0DD665D90D1CA0787FF0F86F1D" />
+    <File Index="2" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\TestClaculator\UnitTest1.cs" ChecksumAlgorithm="SHA256" Checksum="965806CEB023E67D14F996B06625FCFE5E8166EA6223304EB6AC50354DE76F05" />
+    <File Index="1" Name="C:\Users\jows1\.nuget\packages\microsoft.net.test.sdk\16.4.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
     <File Index="5" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\HomeworkCalc\Calculator.cs" ChecksumAlgorithm="SHA256" Checksum="3BDEC84A2648F583C4F15C2ACAC5FA880990DB850EBC36C0A440D6E8C8099973" />
     <File Index="6" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\HomeworkCalc\Program.cs" ChecksumAlgorithm="SHA256" Checksum="AFAB22490D287591C130F42BCE4F680CDAD38047DF81A37BFC6B13FDA7658781" />
     <File Index="7" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\HomeworkCalc\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="609721B0977B4BB4296F30DB82935147EB4A1C0DD665D90D1CA0787FF0F86F1D" />
     <File Index="8" Name="C:\Users\jows1\RiderProjects\HomeworkCalc\HomeworkCalc\obj\Debug\netcoreapp3.1\HomeworkCalc.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="5B30B0E66C32397F5A0A9383D8BBD1D7246F9C12B394B3EA429AD9306AAE10AF" />
   </FileIndices>
-  <Assembly Name="HomeworkCalc" CoveredStatements="14" TotalStatements="35" CoveragePercent="40">
-    <Namespace Name="HomeworkCalc" CoveredStatements="14" TotalStatements="35" CoveragePercent="40">
+  <Assembly Name="HomeworkCalc" CoveredStatements="14" TotalStatements="26" CoveragePercent="54">
+    <Namespace Name="HomeworkCalc" CoveredStatements="14" TotalStatements="26" CoveragePercent="54">
       <Type Name="Calculator" CoveredStatements="14" TotalStatements="26" CoveragePercent="54">
         <Method Name="Calculate(System.Int32,System.Int32,System.String):System.Int32" CoveredStatements="7" TotalStatements="8" CoveragePercent="88">
           <Statement FileIndex="5" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
@@ -58,118 +58,7 @@
           <Statement FileIndex="5" Line="21" Column="50" EndLine="21" EndColumn="64" Covered="True" />
         </Method>
       </Type>
-      <Type Name="Program" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
-        <Method Name="Main():System.Void" CoveredStatements="0" TotalStatements="8" CoveragePercent="0">
-          <Statement FileIndex="6" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="False" />
-          <Statement FileIndex="6" Line="11" Column="13" EndLine="11" EndColumn="47" Covered="False" />
-          <Statement FileIndex="6" Line="12" Column="13" EndLine="12" EndColumn="58" Covered="False" />
-          <Statement FileIndex="6" Line="13" Column="13" EndLine="13" EndColumn="47" Covered="False" />
-          <Statement FileIndex="6" Line="14" Column="13" EndLine="14" EndColumn="64" Covered="False" />
-          <Statement FileIndex="6" Line="16" Column="13" EndLine="16" EndColumn="30" Covered="False" />
-          <Statement FileIndex="6" Line="17" Column="13" EndLine="17" EndColumn="31" Covered="False" />
-          <Statement FileIndex="6" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="False" />
-        </Method>
-        <Method Name="PrintRes(System.Int32):System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="6" Line="7" Column="42" EndLine="7" EndColumn="77" Covered="False" />
-        </Method>
-      </Type>
-    </Namespace>
-  </Assembly>
-  <Assembly Name="TestClaculator" CoveredStatements="26" TotalStatements="61" CoveragePercent="43">
-    <Namespace Name="TestClaculator" CoveredStatements="26" TotalStatements="61" CoveragePercent="43">
-      <Type Name="Tests" CoveredStatements="26" TotalStatements="61" CoveragePercent="43">
-        <Type Name="&lt;&gt;c__DisplayClass4_0" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Method Name="&lt;DivByZero_ErrExpected&gt;b__0():System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-            <Statement FileIndex="2" Line="61" Column="23" EndLine="61" EndColumn="60" Covered="False" />
-          </Method>
-        </Type>
-        <Type Name="&lt;&gt;c__DisplayClass6_0" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Method Name="&lt;InvalidOperation_ErrExpected&gt;b__0():System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-            <Statement FileIndex="2" Line="85" Column="23" EndLine="85" EndColumn="60" Covered="False" />
-          </Method>
-        </Type>
-        <Type Name="&lt;&gt;c__DisplayClass8_0" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Method Name="&lt;DivideMeth_ErrExpected&gt;b__0():System.Void" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-            <Statement FileIndex="2" Line="107" Column="23" EndLine="107" EndColumn="46" Covered="False" />
-          </Method>
-        </Type>
-        <Method Name="Dif_89and_15returned74():System.Void" CoveredStatements="6" TotalStatements="8" CoveragePercent="75">
-          <Statement FileIndex="2" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
-          <Statement FileIndex="2" Line="30" Column="13" EndLine="30" EndColumn="24" Covered="True" />
-          <Statement FileIndex="2" Line="31" Column="13" EndLine="31" EndColumn="24" Covered="True" />
-          <Statement FileIndex="2" Line="32" Column="13" EndLine="32" EndColumn="36" Covered="False" />
-          <Statement FileIndex="2" Line="33" Column="13" EndLine="33" EndColumn="31" Covered="True" />
-          <Statement FileIndex="2" Line="35" Column="13" EndLine="35" EndColumn="64" Covered="False" />
-          <Statement FileIndex="2" Line="37" Column="13" EndLine="37" EndColumn="47" Covered="True" />
-          <Statement FileIndex="2" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
-        </Method>
-        <Method Name="Div_32and_8_expected4():System.Void" CoveredStatements="6" TotalStatements="8" CoveragePercent="75">
-          <Statement FileIndex="2" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
-          <Statement FileIndex="2" Line="43" Column="13" EndLine="43" EndColumn="24" Covered="True" />
-          <Statement FileIndex="2" Line="44" Column="13" EndLine="44" EndColumn="23" Covered="True" />
-          <Statement FileIndex="2" Line="45" Column="13" EndLine="45" EndColumn="36" Covered="False" />
-          <Statement FileIndex="2" Line="46" Column="13" EndLine="46" EndColumn="30" Covered="True" />
-          <Statement FileIndex="2" Line="48" Column="13" EndLine="48" EndColumn="64" Covered="False" />
-          <Statement FileIndex="2" Line="50" Column="13" EndLine="50" EndColumn="47" Covered="True" />
-          <Statement FileIndex="2" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
-        </Method>
-        <Method Name="DivByZero_ErrExpected():System.Void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
-          <Statement FileIndex="2" Line="55" Column="9" EndLine="55" EndColumn="10" Covered="False" />
-          <Statement FileIndex="2" Line="56" Column="13" EndLine="56" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="57" Column="13" EndLine="57" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="58" Column="13" EndLine="58" EndColumn="36" Covered="False" />
-          <Statement FileIndex="2" Line="60" Column="13" EndLine="61" EndColumn="62" Covered="False" />
-          <Statement FileIndex="2" Line="62" Column="9" EndLine="62" EndColumn="10" Covered="False" />
-        </Method>
-        <Method Name="DivideMeth_9And3_3Expected():System.Void" CoveredStatements="0" TotalStatements="7" CoveragePercent="0">
-          <Statement FileIndex="2" Line="90" Column="9" EndLine="90" EndColumn="10" Covered="False" />
-          <Statement FileIndex="2" Line="91" Column="13" EndLine="91" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="92" Column="13" EndLine="92" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="93" Column="13" EndLine="93" EndColumn="30" Covered="False" />
-          <Statement FileIndex="2" Line="95" Column="13" EndLine="95" EndColumn="50" Covered="False" />
-          <Statement FileIndex="2" Line="97" Column="13" EndLine="97" EndColumn="47" Covered="False" />
-          <Statement FileIndex="2" Line="98" Column="9" EndLine="98" EndColumn="10" Covered="False" />
-        </Method>
-        <Method Name="DivideMeth_ErrExpected():System.Void" CoveredStatements="0" TotalStatements="5" CoveragePercent="0">
-          <Statement FileIndex="2" Line="102" Column="9" EndLine="102" EndColumn="10" Covered="False" />
-          <Statement FileIndex="2" Line="103" Column="13" EndLine="103" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="104" Column="13" EndLine="104" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="106" Column="13" EndLine="107" EndColumn="48" Covered="False" />
-          <Statement FileIndex="2" Line="108" Column="9" EndLine="108" EndColumn="10" Covered="False" />
-        </Method>
-        <Method Name="InvalidOperation_ErrExpected():System.Void" CoveredStatements="0" TotalStatements="6" CoveragePercent="0">
-          <Statement FileIndex="2" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="False" />
-          <Statement FileIndex="2" Line="80" Column="13" EndLine="80" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="81" Column="13" EndLine="81" EndColumn="23" Covered="False" />
-          <Statement FileIndex="2" Line="82" Column="13" EndLine="82" EndColumn="50" Covered="False" />
-          <Statement FileIndex="2" Line="84" Column="13" EndLine="85" EndColumn="62" Covered="False" />
-          <Statement FileIndex="2" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="False" />
-        </Method>
-        <Method Name="Mult_16and_4_64expected():System.Void" CoveredStatements="6" TotalStatements="8" CoveragePercent="75">
-          <Statement FileIndex="2" Line="66" Column="9" EndLine="66" EndColumn="10" Covered="True" />
-          <Statement FileIndex="2" Line="67" Column="9" EndLine="67" EndColumn="20" Covered="True" />
-          <Statement FileIndex="2" Line="68" Column="9" EndLine="68" EndColumn="19" Covered="True" />
-          <Statement FileIndex="2" Line="69" Column="9" EndLine="69" EndColumn="32" Covered="False" />
-          <Statement FileIndex="2" Line="70" Column="9" EndLine="70" EndColumn="27" Covered="True" />
-          <Statement FileIndex="2" Line="72" Column="9" EndLine="72" EndColumn="60" Covered="False" />
-          <Statement FileIndex="2" Line="74" Column="9" EndLine="74" EndColumn="43" Covered="True" />
-          <Statement FileIndex="2" Line="75" Column="9" EndLine="75" EndColumn="10" Covered="True" />
-        </Method>
-        <Method Name="Setup():System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
-          <Statement FileIndex="2" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
-          <Statement FileIndex="2" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
-        </Method>
-        <Method Name="Sum_42and_10_52returned():System.Void" CoveredStatements="6" TotalStatements="8" CoveragePercent="75">
-          <Statement FileIndex="2" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
-          <Statement FileIndex="2" Line="17" Column="13" EndLine="17" EndColumn="24" Covered="True" />
-          <Statement FileIndex="2" Line="18" Column="13" EndLine="18" EndColumn="24" Covered="True" />
-          <Statement FileIndex="2" Line="19" Column="13" EndLine="19" EndColumn="36" Covered="False" />
-          <Statement FileIndex="2" Line="20" Column="13" EndLine="20" EndColumn="31" Covered="True" />
-          <Statement FileIndex="2" Line="22" Column="14" EndLine="22" EndColumn="65" Covered="False" />
-          <Statement FileIndex="2" Line="24" Column="14" EndLine="24" EndColumn="48" Covered="True" />
-          <Statement FileIndex="2" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
-        </Method>
-      </Type>
+      <Type Name="Program" CoveredStatements="0" TotalStatements="0" CoveragePercent="0" />
     </Namespace>
   </Assembly>
 </Root>
