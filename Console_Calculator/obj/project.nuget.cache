@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gOEGOJ64v88JCPHur3m0zbruFAdhmWdowcUo+FIrth7Uwlnj+1rUSmTIOV0PPOhX0DLbNekHYgjIJnjp37796g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jows1\\source\\repos\\Console_Calculator\\Console_Calculator\\Console_Calculator.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jows1\\.nuget\\packages\\fsharp.core\\4.7.2\\fsharp.core.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}
