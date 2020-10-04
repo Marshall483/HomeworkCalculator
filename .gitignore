@@ -102,3 +102,6 @@ TestClaculator/obj
 TestClaculator/bin
 
 ConsoleCalculator/
+
+/obj
+/bin
