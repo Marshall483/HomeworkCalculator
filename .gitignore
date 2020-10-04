@@ -1,3 +1,8 @@
+# Additional folders
+
+
+
+
 # User-specific files
 *.suo
 *.user
@@ -65,6 +70,11 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+*.cache
+*.json
+*.props
+*.targets
+*.info
 
 # Chutzpah Test files
 _Chutzpah*
@@ -83,3 +93,12 @@ ipch/
 *.vsp
 *.vspx
 *.sap
+
+# Addition floders
+/HomeworkCalc/obj
+/HomeworkCalc/bin
+
+/TestClaculator/obj
+/TestClaculator/bin
+
+/ConsoleCalculator
