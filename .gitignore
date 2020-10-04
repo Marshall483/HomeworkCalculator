@@ -95,10 +95,10 @@ ipch/
 *.sap
 
 # Addition floders
-[Hh]omeworkCalc/obj/
-[Hh]omeworkCalc/bin/
+[Hh]omeworkCalc/obj/*
+[Hh]omeworkCalc/bin/*
 
-[Tt]estClaculator/obj/
-[Tt]estClaculator/bin/
+[Tt]estClaculator/obj/*
+[Tt]estClaculator/bin/*
 
-[Cc]onsoleCalculator/
+[Cc]onsoleCalculator/*
