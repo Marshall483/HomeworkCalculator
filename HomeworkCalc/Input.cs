@@ -6,7 +6,6 @@ namespace HomeworkCalc
 {
     class Input
     {
-
         public static int GetValue() => int.Parse(Console.ReadLine());
         public static string GetOperator() => Console.ReadLine();
 
@@ -16,13 +15,10 @@ namespace HomeworkCalc
             return GetOperator();
         }
 
-
         public static int RequestValue()
         {
             Console.WriteLine("Enter the value...");
             return GetValue();
         }
-
-
     }
 }

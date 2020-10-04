@@ -3,8 +3,7 @@
 namespace HomeworkCalc
 {
     public class Calculator
-    {
-  
+    {  
         static int Sum(int first, int second) => first + second;
         static int Difference(int first, int second) => first - second;
         public static int Divide(int first, int second)
@@ -25,6 +24,5 @@ namespace HomeworkCalc
                 default: throw new NotSupportedException();
             }
         }
-
     }
 }

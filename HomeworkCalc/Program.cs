@@ -8,10 +8,10 @@ namespace HomeworkCalc
         
         static void Main()
         {
-            var a = Input.RequestValue();
+            var firstVal = Input.RequestValue();
             var action = Input.RequestOperator();
-            var b = Input.RequestValue();
-            var result = Calculator.Calculate(a, b, action);
+            var secVal = Input.RequestValue();
+            var result = Calculator.Calculate(firstVal, secVal, action);
 
             PrintRes(result);
             Console.ReadKey();
