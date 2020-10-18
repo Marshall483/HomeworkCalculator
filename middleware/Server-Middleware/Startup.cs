@@ -29,50 +29,19 @@ namespace CalcOnline
         {
             services.AddRazorPages();
         }
+      
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
             app.UseCalculator();
-            //app.Use(async (context, next) =>
-            //{
-            //    Endpoint endpoint = context.GetEndpoint();
+           
 
-            //    if(endpoint != null)
-            //    {
-            //        var routePattern = (endpoint as RouteEndpoint).RoutePattern.RawText;
-
-            //        Debug.WriteLine($"Endpoint Name: {endpoint.DisplayName}");
-            //        Debug.WriteLine($"Route Pattern: {routePattern}");
-
-            //        await next();
-            //    }
-            //    else
-            //    {
-            //        Debug.WriteLine($"Endpoint Null");
-            //        await context.Response.WriteAsync("EndPoint is not defined");
-            //    }
-
-            //});
-
-            app.UseEndpoints(endpoints =>
+            app.Run(async context =>
             {
-                endpoints.MapGet("/calculate", async context =>
-                {
-                    
-                   
-                    await context.Response.WriteAsync("Value to calculate?");
-
-                });
-
-                endpoints.MapGet("/index", async context =>
-                {
-                    await context.Response.WriteAsync("Do you mean index.html?");
-
-                });
+               /// Nothing to do this 
             });
-
         }
     }
 }

@@ -7,12 +7,13 @@ namespace CalcOnline.Middleware
 {
     public class Calculator
     {
+
         static int Sum(int first, int second) => first + second;
         static int Difference(int first, int second) => first - second;
         public static int Divide(int first, int second)
         {
             if (second != 0) return first / second;
-            else throw new DivideByZeroException();
+            else return int.MinValue;
         }
         static int Mult(int first, int second) => first * second;
 
@@ -24,7 +25,7 @@ namespace CalcOnline.Middleware
                 case "-": return Difference(first, second);
                 case "*": return Mult(first, second);
                 case "/": return Divide(first, second);
-                default: throw new NotSupportedException();
+                default: return int.MinValue;
             }
         }
     }
