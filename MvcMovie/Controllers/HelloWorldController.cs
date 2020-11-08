@@ -15,11 +15,12 @@ namespace MvcMovie.Controllers
         }
 
         //GET /HelloWorld/Welcome
-        public string Welcome(string name, int count = 1)
+        public IActionResult Welcome(string name, int count = 1)
         {
-            string mes = "Congratulation! You are reach Welcome() method!\n" +
-                $"A-a-and we get the parameters: {name} {count} times!";
-            return mes;
+            ViewData["Name"] = name;
+            ViewData["Count"] = count;
+
+            return View();
         }
     }
 }
