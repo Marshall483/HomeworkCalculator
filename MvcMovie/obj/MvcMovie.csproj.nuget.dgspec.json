@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jows1\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj": {}
+    "C:\\Users\\jows1\\source\\repos\\MvcMovie\\HomeworkCalculator\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jows1\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj": {
+    "C:\\Users\\jows1\\source\\repos\\MvcMovie\\HomeworkCalculator\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jows1\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "C:\\Users\\jows1\\source\\repos\\MvcMovie\\HomeworkCalculator\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\jows1\\source\\repos\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "C:\\Users\\jows1\\source\\repos\\MvcMovie\\HomeworkCalculator\\MvcMovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\jows1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jows1\\source\\repos\\MvcMovie\\MvcMovie\\obj\\",
+        "outputPath": "C:\\Users\\jows1\\source\\repos\\MvcMovie\\HomeworkCalculator\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jows1\\AppData\\Roaming\\NuGet\\NuGet.Config",
