@@ -29,6 +29,7 @@ namespace MvcMovie.Models
                         Title = "Еhe wind is getting stronger",
                         ReleaseDate = DateTime.Parse("2012-2-12"),
                         Genre = "Anime",
+                        Raiting = "A",
                         Price = 7.99M
                     },
 
@@ -37,6 +38,7 @@ namespace MvcMovie.Models
                         Title = "Shreck",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Animation Comedy",
+                        Raiting = "B",
                         Price = 8.99M
                     },
 
@@ -45,6 +47,7 @@ namespace MvcMovie.Models
                         Title = "Walking castle",
                         ReleaseDate = DateTime.Parse("2001-2-23"),
                         Genre = "Anime",
+                        Raiting = "B",
                         Price = 9.99M
                     },
 
@@ -53,6 +56,7 @@ namespace MvcMovie.Models
                         Title = "Harry Potter and Globet of fire",
                         ReleaseDate = DateTime.Parse("2001-4-15"),
                         Genre = "Action",
+                        Raiting = "A",
                         Price = 3.99M
                     }
                 );
