@@ -2,3 +2,15 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+$(document).ready(function () {
+    console.log('Staring...')
+    $("#searchBoard").submit(function (e) {
+        e.preventDefault()
+        console.log('On submit search form')
+
+    });
+
+
+});

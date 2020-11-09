@@ -29,6 +29,7 @@ namespace MvcMovie
 
             services.AddDbContext<MvcMovieContext>(options =>
            options.UseSqlServer(Configuration.GetConnectionString("MvcMovieContext")));
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
