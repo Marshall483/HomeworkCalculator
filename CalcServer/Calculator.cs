@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CalcOnline.Data.Interface;
 
 namespace CalcOnline.Middleware
 {
-    public class Calculator
+    public class Calculator : ICalculator
     {
 
-        static int Sum(int first, int second) => first + second;
-        static int Difference(int first, int second) => first - second;
-        public static int Divide(int first, int second)
+        public int Sum(int first, int second) => first + second;
+        public int Difference(int first, int second) => first - second;
+        public int Divide(int first, int second)
         {
             if (second != 0) return first / second;
             else return int.MinValue;
         }
-        static int Mult(int first, int second) => first * second;
+        public int Mult(int first, int second) => first * second;
 
-        public static int Calculate(int first, int second, string action)
+        public int Calculate(int first, int second, string action)
         {
             switch (action)
             {
