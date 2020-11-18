@@ -4,21 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using CalcOnline.Data.Interface;
 
-namespace CalcOnline.Middleware
+namespace CalcOnline.Services
 {
     public class Calculator : ICalculator
     {
-
-        public int Sum(int first, int second) => first + second;
-        public int Difference(int first, int second) => first - second;
-        public int Divide(int first, int second)
+        readonly char[] operators = { '+', '-', '*', '/' }; 
+        public double Sum(double first, double second) => first + second;
+        public double Difference(double first, double second) => first - second;
+        public double Divide(double first, double second)
         {
             if (second != 0) return first / second;
-            else return int.MinValue;
+            else return double.MinValue;
         }
-        public int Mult(int first, int second) => first * second;
+        public double Mult(double first, double second) => first * second;
 
-        public int Calculate(int first, int second, string action)
+        public double Calculate(double first, double second, string action)
         {
             switch (action)
             {
@@ -29,5 +29,6 @@ namespace CalcOnline.Middleware
                 default: return int.MinValue;
             }
         }
+
     }
 }

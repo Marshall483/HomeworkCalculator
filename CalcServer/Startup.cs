@@ -1,13 +1,19 @@
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CalcOnline.Middleware;
+using CalcOnline.Services;
+using CalcOnline.Data.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
-using CalcOnline.Data.Interface;
+using System.Diagnostics;
 
 namespace CalcOnline
 {
@@ -22,7 +28,7 @@ namespace CalcOnline
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<ICalculator, Calculator>();
+            services.AddTransient<ICalculator, Calculator>(); // Добавить зависимость            
         }
       
 
@@ -30,9 +36,6 @@ namespace CalcOnline
         {
             app.UseCalculator();
 
-            //app.Run(context => {
-            //    context.
-            //});
         }
     }
 }

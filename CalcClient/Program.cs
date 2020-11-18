@@ -1,34 +1,32 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
+using TrainingApp.Interfaces;
+using TrainingApp.Services;
 
 namespace TrainingApp
 {
     class Program
     {
 
-        static void ExpressionAddition(double first, double second)
-        {
-            MethodInfo consoleWr = typeof(Console).GetMethod( "WriteLine" , new[] { typeof(double) });
-            ParameterExpression _first = Expression.Parameter(typeof(double), "first");
-            ParameterExpression _second = Expression.Parameter(typeof(double), "second");
+        static string _url = "https://localhost:44344/Calculator";
 
-            Expression[] param = new[] { _first, _second };
-
-            BinaryExpression add = BinaryExpression.Add(_first, _second);
-            MethodCallExpression call = Expression.Call(null, consoleWr, add);
-
-            Expression<Action<double, double>> lambda = Expression.Lambda<Action<double, double>>(call, new[] { _first, _second });
-
-            Action<double, double> compiled = lambda.Compile();
-
-            compiled(first, second);
-
-        }
         static void Main(string[] args)
         {
-            ExpressionAddition(10, 20);
-            Console.ReadKey();
+            IConvertor convertor = new PostfixConvertor();
+            IClient client = new JsonConnector(_url);
+            IExpressionBuilder builder = new ExpressionBuilder();
+            IVisitor visitor = new CalculatorExpressionVisitor(client);
+
+
+            string pattern = "(2+3)/6*7+8*9";
+            var postfixForm = convertor.ToPostfix(pattern);
+            var expression = builder.BuildExpression(postfixForm);
+            var result = visitor.VisitAsync(expression);
+
+            Console.WriteLine(result.Result);
+            
+            Console.ReadKey();    
         }
     }
 }

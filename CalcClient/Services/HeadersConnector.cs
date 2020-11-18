@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using TrainingApp.Interfaces;
 
 namespace TrainingApp
 {
-    class Connector
+    class HeadersConnector 
     {
         private string _url;
 
-        public Connector(string url) => _url = url;
+        public HeadersConnector(string url) => _url = url;
 
         private string FormateAction(string action) => 
                 action.
