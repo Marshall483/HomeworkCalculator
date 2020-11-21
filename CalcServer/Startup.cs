@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CalcOnline.Middleware;
+using CalcOnline.Services;
+using CalcOnline.Data.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using System.Diagnostics;
@@ -24,24 +26,16 @@ namespace CalcOnline
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            services.AddTransient<ICalculator, Calculator>(); // Добавить зависимость            
         }
       
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseRouting();
             app.UseCalculator();
-           
 
-            app.Run(async context =>
-            {
-               /// Nothing to do this 
-            });
         }
     }
 }
