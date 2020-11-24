@@ -13,7 +13,6 @@ namespace CalcOnline.Middleware
 {
     public class CalculatorMiddleware
     {
-
         private readonly RequestDelegate _next;
         private readonly ICalculator _calculator;
 
@@ -25,30 +24,18 @@ namespace CalcOnline.Middleware
 
         public async Task InvokeAsync(HttpContext context)
         {
-            try
+            using (var reader = new StreamReader(context.Request.Body))
             {
-                using (var reader = new StreamReader(context.Request.Body))
-                {
-                    var body = await reader.ReadToEndAsync();
-                    var data = JsonSerializer.Deserialize<JsonData>(body);
+                var body = await reader.ReadToEndAsync();
+                var data = JsonSerializer.Deserialize<JsonData>(body);
 
-                    var res = _calculator.Calculate( left: Convert.ToDouble(data.firstValue), 
-                                                     action: data.oper, 
-                                                     right: Convert.ToDouble(data.secondValue));
+                var res = _calculator.Calculate(left: Convert.ToDouble(data.FirstValue),
+                                                 action: data.Oper,
+                                                 right: Convert.ToDouble(data.SecondValue));
 
-                    var resBytes = Encoding.UTF8.GetBytes(res.ToString());
-                    await context.Response.Body.WriteAsync(resBytes);
-                }
-            }catch(Exception ex) { Console.WriteLine(ex.Message); }
-
-        }
-    }
-
-    public static class CalculatorExtention
-    {
-        public static IApplicationBuilder UseCalculator(this IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<CalculatorMiddleware>();
+                var resBytes = Encoding.UTF8.GetBytes(res.ToString());
+                await context.Response.Body.WriteAsync(resBytes);
+            }
         }
     }
 }

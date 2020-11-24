@@ -6,9 +6,8 @@ namespace JsonLibrary
 {
     public class JsonData
     {
-        public string firstValue { get; set; }
-        public string oper { get; set; }
-        public string secondValue{ get; set; }
-
+        public string FirstValue { get; set; }
+        public string Oper { get; set; }
+        public string SecondValue{ get; set; }
     }
 }

@@ -13,14 +13,13 @@ namespace TrainingApp.Services
 {
     class JsonConnector : IClient
     {
-        readonly string _url;
+        private readonly string _url;
 
         public JsonConnector(string url) =>
             _url = url;
 
         public  async Task<double> Connect(double first, string action, double second)
         {
-
             var requestData = new JsonData()
             {
                 FirstValue = first.ToString(),
@@ -37,7 +36,5 @@ namespace TrainingApp.Services
                 return  Convert.ToDouble(response);
             }
         }
-
-
     }
 }
