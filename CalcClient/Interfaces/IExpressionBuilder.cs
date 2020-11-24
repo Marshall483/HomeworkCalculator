@@ -7,8 +7,6 @@ namespace TrainingApp.Interfaces
 {
     public interface IExpressionBuilder
     {
-
         public Expression BuildExpression(Queue<char> postfixForm);
-
     }
 }

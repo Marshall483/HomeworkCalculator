@@ -8,6 +8,5 @@ namespace TrainingApp.Interfaces
     public interface IClient
     {
         public Task<double> Connect(double first, string action, double second);
-
     }
 }

@@ -6,8 +6,6 @@ namespace TrainingApp.Interfaces
 {
     public interface IConvertor
     {
-
         public Queue<char> ToPostfix(string expression);
-
     }
 }

@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using TrainingApp.Interfaces;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using JsonLibrary;
 using System.Net.Http;
 
@@ -24,9 +23,9 @@ namespace TrainingApp.Services
 
             var requestData = new JsonData()
             {
-                firstValue = first.ToString(),
-                oper = action,
-                secondValue = second.ToString()
+                FirstValue = first.ToString(),
+                Oper = action,
+                SecondValue = second.ToString()
             };
             var jsonString = JsonSerializer.Serialize(requestData);
 
