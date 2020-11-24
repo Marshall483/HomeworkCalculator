@@ -9,6 +9,5 @@ namespace TrainingApp.Interfaces
     interface IVisitor
     {
         public async Task<double> VisitAsync(Expression expression) { return default(double); }
-
     }
 }

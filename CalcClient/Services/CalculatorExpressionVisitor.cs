@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 using TrainingApp.Interfaces;
 
@@ -9,19 +8,20 @@ namespace TrainingApp.Services
 {
     class CalculatorExpressionVisitor : ExpressionVisitor, IVisitor
     {
-
         readonly IClient _client;
-        readonly Dictionary<ExpressionType, string> operationsDictionary = new Dictionary<ExpressionType, string>()
+        readonly Dictionary<ExpressionType, string> operationsDictionary;
+        
+        public CalculatorExpressionVisitor(IClient client)
         {
-            { ExpressionType.Add, "+" },
-            { ExpressionType.Subtract, "-" },
-            { ExpressionType.Multiply, "*" },
-            { ExpressionType.Divide, "/" }
-        };
-
-        public CalculatorExpressionVisitor(IClient client) => 
-            this._client = client; 
-
+            this._client = client;
+            operationsDictionary = new Dictionary<ExpressionType, string>()
+            {
+                { ExpressionType.Add, "+" },
+                { ExpressionType.Subtract, "-" },
+                { ExpressionType.Multiply, "*" },
+                { ExpressionType.Divide, "/" }
+            };
+        }
 
         public async Task<double> VisitAsync(Expression node)
         {
@@ -32,16 +32,15 @@ namespace TrainingApp.Services
             else
                 operation = operationsDictionary[node.NodeType];
 
-
             var thisBynaryNode = node as BinaryExpression;
             var deepToLeft = Task.Run( () => VisitAsync(thisBynaryNode.Left) );
             var deepToRight = Task.Run( () => VisitAsync(thisBynaryNode.Right) );
             await Task.Yield();
             var results = await Task.WhenAll(new[] { deepToLeft, deepToRight });
-            var res = await _client.Connect(first: results[0],
+            var result = await _client.Connect(first: results[0],
                                             action: operation,
                                             second: results[1]);
-            return res;
+            return result;
         }
 
         protected double VisitConstant(Expression node) =>

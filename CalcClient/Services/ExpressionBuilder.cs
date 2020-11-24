@@ -1,36 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
 using TrainingApp.Interfaces;
 
 namespace TrainingApp.Services
 {
     class ExpressionBuilder : IExpressionBuilder
     {
-        public Expression BuildExpression(Queue<char> postfixForm) // 12+34*-5/
+        public Expression BuildExpression(Queue<char> postfixForm) 
         {
-            Stack<Expression> exStk = new Stack<Expression>();
+            var exprassionStack = new Stack<Expression>();
 
             foreach(char token in postfixForm)
             {
                 if (char.IsDigit(token))
-                    exStk.Push(Expression.Constant(Convert.ToDecimal(token.ToString()), typeof(decimal)));
+                    exprassionStack.Push(Expression.Constant(Convert.ToDecimal(token.ToString()), typeof(decimal)));
                 else
                 {
-                    Expression second = exStk.Pop();
-                    Expression first = exStk.Pop();
+                    Expression second = exprassionStack.Pop();
+                    Expression first = exprassionStack.Pop();
                     switch (token)
                     {
-                        case '+': exStk.Push(Expression.Add(first, second)); break;
-                        case '-': exStk.Push(Expression.Subtract(first, second)); break;
-                        case '*': exStk.Push(Expression.Multiply(first, second)); break;
-                        case '/': exStk.Push(Expression.Divide(first, second)); break;
+                        case '+': exprassionStack.Push(Expression.Add(first, second)); break;
+                        case '-': exprassionStack.Push(Expression.Subtract(first, second)); break;
+                        case '*': exprassionStack.Push(Expression.Multiply(first, second)); break;
+                        case '/': exprassionStack.Push(Expression.Divide(first, second)); break;
                     }
                 }    
             }
-
-            return exStk.Pop();
+            return exprassionStack.Pop();
         }
     }
 }
