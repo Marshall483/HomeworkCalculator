@@ -29,6 +29,5 @@ namespace CalcOnline.Services
                 default: return int.MinValue;
             }
         }
-
     }
 }

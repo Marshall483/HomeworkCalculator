@@ -9,6 +9,5 @@ namespace JsonLibrary
         public string FirstValue { get; set; }
         public string Oper { get; set; }
         public string SecondValue{ get; set; }
-
     }
 }

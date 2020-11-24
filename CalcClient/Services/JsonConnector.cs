@@ -37,7 +37,5 @@ namespace TrainingApp.Services
                 return  Convert.ToDouble(response);
             }
         }
-
-
     }
 }
