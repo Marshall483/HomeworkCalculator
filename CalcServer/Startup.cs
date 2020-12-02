@@ -25,6 +25,7 @@ namespace CalcOnline
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseCalculator();
+            services.AddTransient<ICalculator, Calculator>(); // Äîáàâèòü çàâèñèìîñòü            
         }
     }
 }
