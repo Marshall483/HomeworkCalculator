@@ -23,27 +23,34 @@ namespace TrainingApp.Services
             };
         }
 
-        public async Task<double> VisitAsync(Expression node)
+        public async Task<double> VisitConstantAsync(Expression node)
         {
             string operation;
 
+            var handleNodeType = Visit(node);
+            
             if (node.NodeType.Equals(ExpressionType.Constant))
-                return VisitConstant(node);
+                return Convert.ToDouble((node as ConstantExpression).Value);
             else
                 operation = operationsDictionary[node.NodeType];
 
-            var thisBynaryNode = node as BinaryExpression;
-            var deepToLeft = Task.Run( () => VisitAsync(thisBynaryNode.Left) );
-            var deepToRight = Task.Run( () => VisitAsync(thisBynaryNode.Right) );
-            await Task.Yield();
+            var thisBinaryNode = node as BinaryExpression;
+            
+            var deepToLeft = Task.Run( () => VisitConstantAsync(thisBinaryNode.Left ) );
+            var deepToRight = Task.Run( () => VisitConstantAsync(thisBinaryNode.Right ) );
+                await Task.Yield();
+            
             var results = await Task.WhenAll(new[] { deepToLeft, deepToRight });
-            var result = await _client.Connect(first: results[0],
+            var result = await _client.Connect(first: Convert.ToDouble(results[0]),
                                             action: operation,
-                                            second: results[1]);
+                                            second: Convert.ToDouble(results[1]) );
             return result;
         }
 
-        protected double VisitConstant(Expression node) =>
-            Convert.ToDouble(((ConstantExpression)node).Value);
+        protected BinaryExpression Visit(BinaryExpression node) =>
+            node;
+
+        protected ConstantExpression Visit(ConstantExpression node) =>
+            node;
     }
 }
