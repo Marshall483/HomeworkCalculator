@@ -10,12 +10,12 @@ namespace TestBenchmark
     {
         void _simulateWork()
         {
-            string a = "";
+            StringBuilder builder = new StringBuilder();
             for (int i = 0; i < 10000; i++)
-                a += i.ToString();
+                builder.Append(i.ToString());
+            return a.ToString();
         }
 
-       // [Benchmark(Description = "PbStaticVoid")]
         public static void PbStaticVoid() {
             string a = "";
             for (int i = 0; i < 10000; i++)
@@ -32,12 +32,12 @@ namespace TestBenchmark
 
         public static void PbGenericStaticVoid<T>()
         {
-            string a = "";
+            StringBuilder builder = new StringBuilder();
             for (int i = 0; i < 10000; i++)
-                a += i.ToString();
+                builder.Append(i.ToString());
+            return a.ToString();
         }
 
-        //[Benchmark(Description = "PbGenericStaticVoid")]
         public static void PbGenericStaticVoid() =>
             PbGenericStaticVoid<int>();
 
@@ -49,10 +49,10 @@ namespace TestBenchmark
         [Benchmark(Description = "PbDynamic")]
         public dynamic PbDynamic()
         {
-            string a = "";
+            StringBuilder builder = new StringBuilder();
             for (int i = 0; i < 10000; i++)
-                a += i.ToString();
-            return a;
+                builder.Append(i.ToString());
+            return a.ToString();
         }
 
     }
