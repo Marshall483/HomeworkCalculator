@@ -17,9 +17,10 @@ namespace TestBenchmark
         }
 
         public static void PbStaticVoid() {
-            string a = "";
+            StringBuilder builder = new StringBuilder();
             for (int i = 0; i < 10000; i++)
-                a += i.ToString();
+                builder.Append(i.ToString());
+            return a.ToString();
         }
 
         [Benchmark(Description = "PbVoid")]
