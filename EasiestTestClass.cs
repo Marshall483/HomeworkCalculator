@@ -8,10 +8,7 @@ namespace TestBenchmark
 {
     static class EasiestTestClass
     {
-        public static void OnTestsStart()
-        {
+        public static void OnTestsStart() =>
             BenchmarkRunner.Run<MyClass>();
-        }
-
     }
 }
