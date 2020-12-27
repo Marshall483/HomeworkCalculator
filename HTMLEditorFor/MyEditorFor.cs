@@ -46,11 +46,6 @@ namespace EditorFor.Services
             return content;
         }
 
-        private static string GenerateSelect(Type currentType, object instance)
-        {
-            throw new NotImplementedException();
-        }
-
         private static string GenereteCheckBox(Type type, object instance)
         {
             return @"<input type='checkbox' " + 
