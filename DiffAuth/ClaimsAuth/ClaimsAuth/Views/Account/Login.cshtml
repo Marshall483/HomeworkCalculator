@@ -1,0 +1,22 @@
+﻿@model LoginModel
+
+<form asp-action="Login" asp-controller="Account" method="post">
+    <div class="validation" asp-validation-summary="All"></div>
+    <div>
+
+        <div>
+            <label asp-for="Email">Введите Email</label><br />
+            <input type="email" asp-for="Email" />
+        </div>
+
+        <div>
+            <label asp-for="Password">Введите пароль</label><br />
+            <input type="password" asp-for="Password" />
+        </div>
+
+        <div>
+            <input type="submit" value="Войти" />
+        </div>
+
+    </div>
+</form>
