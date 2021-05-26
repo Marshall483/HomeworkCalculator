@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RvO7V+o30X4SrwH9yjL9q4cxBwWdGLdigabRDEivJGEFgEwtl0mDNo8vNDHvbR2gQUp5BpwlXLNf1RxzVradew==",
+  "success": true,
+  "projectFilePath": "/Users/Marshall483/Documents/sources/repos/Testing/Testing/Testing.csproj",
+  "expectedPackageFiles": [
+    "/Users/Marshall483/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
