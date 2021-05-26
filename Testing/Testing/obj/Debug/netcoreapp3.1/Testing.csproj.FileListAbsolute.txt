@@ -1,0 +1,12 @@
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/obj/Debug/netcoreapp3.1/Testing.csprojAssemblyReference.cache
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/obj/Debug/netcoreapp3.1/Testing.AssemblyInfoInputs.cache
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/obj/Debug/netcoreapp3.1/Testing.AssemblyInfo.cs
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/obj/Debug/netcoreapp3.1/Testing.csproj.CoreCompileInputs.cache
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/bin/Debug/netcoreapp3.1/Testing.deps.json
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/bin/Debug/netcoreapp3.1/Testing.runtimeconfig.json
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/bin/Debug/netcoreapp3.1/Testing.runtimeconfig.dev.json
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/bin/Debug/netcoreapp3.1/Testing.dll
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/bin/Debug/netcoreapp3.1/Testing.pdb
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/obj/Debug/netcoreapp3.1/Testing.dll
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/obj/Debug/netcoreapp3.1/Testing.pdb
+/Users/Marshall483/Documents/sources/repos/Testing/Testing/obj/Debug/netcoreapp3.1/Testing.genruntimeconfig.cache
